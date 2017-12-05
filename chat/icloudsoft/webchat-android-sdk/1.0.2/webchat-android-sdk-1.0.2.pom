@@ -6,6 +6,7 @@
   <artifactId>webchat-android-sdk</artifactId>
   <version>1.0.2</version>
   <name>imccChat</name>
+  <packaging>jar</packaging>
   <description></description>
   <url>https://github.com/CloudSoft-Team/webchat-android-sdk</url>
   <licenses>
