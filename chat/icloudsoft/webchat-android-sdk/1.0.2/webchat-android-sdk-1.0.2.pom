@@ -5,7 +5,6 @@
   <groupId>chat.icloudsoft</groupId>
   <artifactId>webchat-android-sdk</artifactId>
   <version>1.0.2</version>
-  <packaging>aar</packaging>
   <name>imccChat</name>
   <description></description>
   <url>https://github.com/CloudSoft-Team/webchat-android-sdk</url>
