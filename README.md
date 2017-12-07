@@ -150,3 +150,5 @@ MessageNotifyUtils.getMessCallBack(new MessCallBack<String>()
 ```
 -keep class chat.icloudsoft.**{*;} 
 ```
+
+[接入demo](https://github.com/CloudSoft-Team/webchat-android-demo)
