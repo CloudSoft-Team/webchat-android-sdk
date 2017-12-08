@@ -15,8 +15,7 @@ Webchat sdk 是一个可自定义的嵌入式聊天SDK。
 
 ### 三、AndroidStdio接入方式如下：
 
-1. 添加Gradle依赖:
------
+**1. 添加Gradle依赖:**
 
 **Gradle dependency**
 
@@ -38,8 +37,8 @@ dependencies {
 ```
 
 
-2. 在你**App/模块moudle**层级的 `build.gradle`添加相关依赖：
------
+**2. 在你**App/模块moudle**层级的 `build.gradle`添加相关依赖：**
+
 ```
 compile 'com.android.support:appcompat-v7:22.2.0'
 compile 'com.android.support:cardview-v7:22.0.0'
@@ -50,8 +49,8 @@ compile 'com.squareup.retrofit2:converter-gson:2.0.2'
 compile 'com.squareup.picasso:picasso:2.5.2'
 ```
 
-3. 添加相应的权限：
------
+**3. 添加相应的权限：**
+
 ```
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 <uses-permission android:name="android.permission.INTERNET" />
@@ -62,8 +61,8 @@ compile 'com.squareup.picasso:picasso:2.5.2'
 <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 ```
 
-4. 在项目的自定义Application里初始化：
----
+**4. 在项目的自定义Application里初始化：**
+
 ```
 public class App extends Application {
 
@@ -79,8 +78,8 @@ public class App extends Application {
    }
 ```
 
-5. 在调用的地方传递了两个参数 hostname 跟custid：
----
+**5. 在调用的地方传递了两个参数 hostname 跟custid：**
+
 示例：
 hostName:接入号
 Custid：app用户的唯一标志，必须是字符或数字组成，不能是中文以及特殊符号
@@ -94,8 +93,8 @@ startActivity(it);
 hostNum来源：
 ![](image/新增wechat号.png)
 
-6. 给坐席传其他字段，如：性别，昵称等
----
+**6. 给坐席传其他字段，如：性别，昵称等**
+
 ```
 mUserNick  ：昵称如：lucky
 imUserGender：性别 2:女性 1：男性
@@ -105,8 +104,8 @@ imUserIP：ip地址 192.10.11.11
 strIMUserheadimgurl：头像url  http://baidu/1.png
 ```
 
-7. 自定义属性：包括如自定义电话、客户id
----
+**7. 自定义属性：包括如自定义电话、客户id**
+
 ```
 List<PropertyBean> list = new ArrayList<PropertyBean>();
 
@@ -125,8 +124,8 @@ it.putExtra("params",params);
 
 ```
 
-8. 退出聊天页面后，继续接收消息的处理
----
+**8. 退出聊天页面后，继续接收消息的处理**
+
 ①、在调用聊天页面的地方增加一行如下代码：
 ```
 it.putExtra("MessageFlag","1");
@@ -145,8 +144,12 @@ MessageNotifyUtils.getMessCallBack(new MessCallBack<String>()
 ③、消息接收回调的处理：
 这个需要你在存活的线程里面处理，通知用户的方式需要你自定义，如自己写个notification的弹窗
 
-9. AAR文件混淆处理
----
+**9. AAR文件混淆处理**
+
 ```
 -keep class chat.icloudsoft.**{*;} 
 ```
+
+**[SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-demo)**
+
+如果你有轻度自定义需求，请参考**[轻度自定义SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-custom)**
