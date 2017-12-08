@@ -32,7 +32,7 @@ allprojects {
 
 ```gradle
 dependencies {
-	compile 'chat.icloudsoft:webchat-android-sdk:1.0.2'
+	compile 'chat.icloudsoft:webchat-android-sdk:1.0.4@aar'
 }
 ```
 
