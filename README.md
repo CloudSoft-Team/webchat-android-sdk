@@ -85,7 +85,7 @@ hostName:接入号
 Custid：app用户的唯一标志，必须是字符或数字组成，不能是中文以及特殊符号
 ```
 Intent it = new Intent(MainActivity.this, SessionDetailsActivity.class);
-it.putExtra("hostNum","Y8RXNY");
+it.putExtra("hostNum","Y8MXRY");
 it.putExtra("custId","13510534912");
 it.putExtra("imUserNick","Lucky");
 startActivity(it);
