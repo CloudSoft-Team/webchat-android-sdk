@@ -102,6 +102,7 @@ imUserCityId：城市 深圳
 imUserBirthday：生日 1999-09-09
 imUserIP：ip地址 192.10.11.11
 strIMUserheadimgurl：头像url  http://baidu/1.png
+
 ```
 
 **7. 自定义属性：包括如自定义电话、客户id**
@@ -147,8 +148,12 @@ MessageNotifyUtils.getMessCallBack(new MessCallBack<String>()
 **9. AAR文件混淆处理**
 
 ```
--keep class chat.icloudsoft.**{*;} 
 -ignorewarning
+-keep class chat.icloudsoft.**{*;} 
+-keep class com.nineoldandroids.**{*;}
+-keep class de.tavendo.autobahn.**{*;}
+-keep class org.dom4j.**{*;}
+-keep class org.json.**{*;}
 ```
 
 **[SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-demo)**
