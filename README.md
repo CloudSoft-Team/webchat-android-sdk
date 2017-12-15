@@ -32,7 +32,7 @@ allprojects {
 
 ```gradle
 dependencies {
-	compile 'chat.icloudsoft:webchat-android-sdk:1.0.2'
+	compile 'chat.icloudsoft:webchat-android-sdk:1.0.4@aar'
 }
 ```
 
@@ -85,7 +85,7 @@ hostName:接入号
 Custid：app用户的唯一标志，必须是字符或数字组成，不能是中文以及特殊符号
 ```
 Intent it = new Intent(MainActivity.this, SessionDetailsActivity.class);
-it.putExtra("hostNum","WGn46A");
+it.putExtra("hostNum","Y8MXRY");
 it.putExtra("custId","13510534912");
 it.putExtra("imUserNick","Lucky");
 startActivity(it);
@@ -102,6 +102,7 @@ imUserCityId：城市 深圳
 imUserBirthday：生日 1999-09-09
 imUserIP：ip地址 192.10.11.11
 strIMUserheadimgurl：头像url  http://baidu/1.png
+
 ```
 
 **7. 自定义属性：包括如自定义电话、客户id**
@@ -147,7 +148,12 @@ MessageNotifyUtils.getMessCallBack(new MessCallBack<String>()
 **9. AAR文件混淆处理**
 
 ```
+-ignorewarning
 -keep class chat.icloudsoft.**{*;} 
+-keep class com.nineoldandroids.**{*;}
+-keep class de.tavendo.autobahn.**{*;}
+-keep class org.dom4j.**{*;}
+-keep class org.json.**{*;}
 ```
 
 **[SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-demo)**
