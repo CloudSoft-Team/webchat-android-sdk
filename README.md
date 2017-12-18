@@ -148,12 +148,30 @@ MessageNotifyUtils.getMessCallBack(new MessCallBack<String>()
 **9. AAR文件混淆处理**
 
 ```
--ignorewarning
--keep class chat.icloudsoft.**{*;} 
+# icloudsoft
+-keep class chat.icloudsoft.**{*;}
+-dontwarn chat.icloudsoft.**
+
 -keep class com.nineoldandroids.**{*;}
+
+# tavendo
 -keep class de.tavendo.autobahn.**{*;}
--keep class org.dom4j.**{*;}
--keep class org.json.**{*;}
+-dontwarn de.tavendo.**
+
+# dom4j
+-keep class org.dom4j.** { *; }
+-dontwarn org.dom4j.**
+
+# retrofit
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+-dontwarn com.fasterxml.**
+-dontwarn retrofit2.**
+
+# picasso
+-dontwarn com.squareup.okhttp.**
+
+-keep class org.json.** { *; }
 ```
 
 **[SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-demo)**
