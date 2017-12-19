@@ -90,7 +90,7 @@ it.putExtra("custId","13510534912");
 it.putExtra("imUserNick","Lucky");
 startActivity(it);
 ```
-hostNum来源：
+hostNum来源：请在[客服网页](http://u.im-cc.com)用管理账号登陆，根据下图获取hostNum
 ![](image/新增wechat号.png)
 
 **6. 给坐席传其他字段，如：性别，昵称等**
