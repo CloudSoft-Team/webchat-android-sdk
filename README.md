@@ -82,6 +82,7 @@ public class App extends Application {
 
 示例：
 hostName:接入号
+
 Custid：app用户的唯一标志，必须是字符、数字和"_"组成，不能是中文以及特殊符号, 建议和ios端保持统一的命名格式
 ```
 Intent it = new Intent(MainActivity.this, SessionDetailsActivity.class);
