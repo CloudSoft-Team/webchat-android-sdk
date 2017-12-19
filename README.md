@@ -82,7 +82,7 @@ public class App extends Application {
 
 示例：
 hostName:接入号
-Custid：app用户的唯一标志，必须是字符或数字组成，不能是中文以及特殊符号
+Custid：app用户的唯一标志，必须是字符、数字和"_"组成，不能是中文以及特殊符号, 建议和ios端保持统一的命名格式
 ```
 Intent it = new Intent(MainActivity.this, SessionDetailsActivity.class);
 it.putExtra("hostNum","Y8MXRY");
@@ -90,7 +90,7 @@ it.putExtra("custId","13510534912");
 it.putExtra("imUserNick","Lucky");
 startActivity(it);
 ```
-hostNum来源：请在[客服网页](http://u.im-cc.com)用管理账号登陆，根据下图获取hostNum
+hostNum来源：请在[客服网页](http://u.im-cc.com)用管理账号登陆，根据下图的步骤获取hostNum
 ![](image/新增wechat号.png)
 
 **6. 给坐席传其他字段，如：性别，昵称等**
