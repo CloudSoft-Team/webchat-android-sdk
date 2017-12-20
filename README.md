@@ -67,9 +67,9 @@ compile 'com.squareup.picasso:picasso:2.5.2'
 public class App extends Application {
 
     // 生产环境
-    public static  String baseUrl = "ws://u.im-cc.com:17998/httpif";
-    public static  String UploadUrl = "http://uccfile.im-cc.com/";//文件上传的url测试
-    public static  String DownloadUrl = "http://uccfile.im-cc.com/download/";//文件下载的url
+    public static final String BASE_URL = "ws://u.im-cc.com:17998/httpif";
+    public static final String UPLOAD_URL = "http://uccfile.im-cc.com/";//文件上传的url测试
+    public static final String DOWNLOAD_URL = "http://uccfile.im-cc.com/download/";//文件下载的url
 
     @Override
     public void onCreate() {
@@ -94,7 +94,7 @@ startActivity(it);
 hostNum来源：请在[客服网页](http://u.im-cc.com)用管理账号登陆，根据下图的步骤获取hostNum
 ![](image/新增wechat号.png)
 
-**6. 给坐席传其他字段，如：性别，昵称等**
+**6. 给客服坐席传其他字段，如：性别，昵称等**
 
 ```
 imUserNick  ：昵称如：lucky
@@ -104,6 +104,15 @@ imUserBirthday：生日 1999-09-09
 imUserIP：ip地址 192.10.11.11
 strIMUserheadimgurl：头像url  http://baidu/1.png
 
+```
+例如，给客服坐席传递用户的性别和昵称
+```
+Intent it = new Intent(MainActivity.this, SessionDetailsActivity.class);
+it.putExtra("hostNum","Y8MXRY");
+it.putExtra("custId","13510534912");
+it.putExtra("imUserNick","Lucky"); // 用户昵称
+it.putExtra("imUserGender","女"); // 用户性别
+startActivity(it);
 ```
 
 **7. 自定义属性：如自定义电话、客户id**
