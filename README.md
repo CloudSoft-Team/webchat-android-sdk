@@ -67,9 +67,9 @@ compile 'com.squareup.picasso:picasso:2.5.2'
 public class App extends Application {
 
     // 生产环境
-    public static  String BASE_URL = "ws://u.im-cc.com:17998/httpif";
-    public static  String UPLOAD_URL = "http://uccfile.im-cc.com/";//文件上传的url测试
-    public static  String DOWNLOAD_URL = "http://uccfile.im-cc.com/download/";//文件下载的url
+    public static final String BASE_URL = "ws://u.im-cc.com:17998/httpif";
+    public static final String UPLOAD_URL = "http://uccfile.im-cc.com/";//文件上传的url测试
+    public static final String DOWNLOAD_URL = "http://uccfile.im-cc.com/download/";//文件下载的url
 
     @Override
     public void onCreate() {
