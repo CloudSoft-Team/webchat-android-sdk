@@ -106,16 +106,16 @@ strIMUserheadimgurl：头像url  http://baidu/1.png
 
 ```
 
-**7. 自定义属性：包括如自定义电话、客户id**
+**7. 自定义属性：如自定义电话、客户id**
 
 ```
 List<PropertyBean> list = new ArrayList<PropertyBean>();
 
 PropertyBean bean1 = new PropertyBean();
-bean1.key = "后台自定义的电话key值";
-bean1.value = "手机值";
+bean1.key = "自定义的字段(电话号码)的key值";
+bean1.value = "电话号码";
 PropertyBean bean2 = new PropertyBean();
-bean2.key = "后台自定义的客户ID的key值";
+bean2.key = "自定义的字段(客户ID)的key值";
 bean2.value = "客户id";
 //可自定义多个属性，由后台创建
 list.add(bean1);
@@ -123,8 +123,11 @@ list.add(bean2);
 String params = mGson.toJson(list);
 it.putExtra("params",params);
 
-
 ```
+自定义属性的key值获取方法：
+ 1. 用管理员账号登陆客服系统.
+ 2. 添加自定义字段，步骤如下图：
+![](image/自定义字段.png)
 
 **8. 退出聊天页面后，继续接收消息的处理**
 
