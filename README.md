@@ -97,7 +97,7 @@ hostNum来源：请在[客服网页](http://u.im-cc.com)用管理账号登陆，
 **6. 给坐席传其他字段，如：性别，昵称等**
 
 ```
-mUserNick  ：昵称如：lucky
+imUserNick  ：昵称如：lucky
 imUserGender：性别 2:女性 1：男性
 imUserCityId：城市 深圳
 imUserBirthday：生日 1999-09-09
