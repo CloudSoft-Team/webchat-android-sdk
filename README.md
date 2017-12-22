@@ -193,3 +193,4 @@ MessageNotifyUtils.getMessCallBack(new MessCallBack<String>()
 **[SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-demo)**
 
 如果你有轻度自定义需求，请参考**[轻度自定义SDK接入demo](https://github.com/CloudSoft-Team/webchat-android-custom)**
+![](image/apple.png)
