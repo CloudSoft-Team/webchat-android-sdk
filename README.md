@@ -75,7 +75,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         AppUtil.init(getAppContext(), BASE_URL, DOWNLOAD_URL, UPLOAD_URL);
-   }
+   } 
 ```
 
 **5. 在调用的地方传递了两个参数 hostname 跟custid：**
