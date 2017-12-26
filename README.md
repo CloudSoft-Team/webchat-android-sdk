@@ -32,7 +32,7 @@ allprojects {
 
 ```gradle
 dependencies {
-	compile 'chat.icloudsoft:webchat-android-sdk:1.0.6@aar'
+	compile 'chat.icloudsoft:webchat-android-sdk:1.0.7@aar'
 }
 ```
 
@@ -102,7 +102,7 @@ imUserGender：性别 2:女性 1：男性
 imUserCityId：城市 深圳
 imUserBirthday：生日 1999-09-09
 imUserIP：ip地址 192.10.11.11
-strIMUserHeadImgUrl：头像url  http://baidu/1.png
+strIMUserheadimgurl：头像url  http://baidu/1.png
 
 ```
 例如，给客服坐席传递用户的性别和昵称
