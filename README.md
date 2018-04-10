@@ -133,6 +133,11 @@ String params = mGson.toJson(list);
 it.putExtra("params",params);
 
 ```
+**8. 自定义页面颜色**
+```
+在自己项目自定义的Application里面添加：
+AppUtil.initThemeColor(R.color.red_text_color);
+```
 自定义属性的key值获取方法：
  1. 用管理员账号登陆客服系统.
  2. 添加自定义字段，步骤如下图：
