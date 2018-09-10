@@ -78,10 +78,10 @@ public class App extends Application {
    } 
 ```
 
-**5. 在调用的地方传递了两个参数 hostname 跟custid：**
+**5. 在调用的地方传递了两个参数 hostNum 跟custid：**
 
 示例：
-hostName:接入号
+hostNum:接入号
 
 Custid：app用户的唯一标志，必须是字符、数字和"_"组成，不能是中文以及特殊符号, 建议和ios端保持统一的命名格式
 ```
