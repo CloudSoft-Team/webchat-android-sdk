@@ -35,7 +35,7 @@ dependencies {
 	compile 'chat.icloudsoft:webchat-android-sdk:1.1.7@aar'
 }
 ```
-
+**温馨提示：** 如果你想用aar或jar包的形式接入，可以直接把项目下载下来，挑你需要的版本，把里面的aar或jar包拿出来放到项目中就可以了,（jar包只适用于轻量级自定义的情况，[参考demo](https://github.com/CloudSoft-Team/webchat-android-custom)）
 
 **2. 在你**App/模块moudle**层级的 `build.gradle`添加相关依赖：**
 
