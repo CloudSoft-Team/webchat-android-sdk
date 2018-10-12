@@ -136,8 +136,7 @@ it.putExtra("params",params);
 **8. 自定义页面颜色**
 ```
 在自己项目自定义的Application里面添加：
- AppUtil.initStyle(R.color.green_color, R.color.drak_blue, R.color.colorAccent);
- initStyle(int titleColor, int sessionBgColor, int bottomColor)
+AppUtil.initStyle(R.color.green_color, R.color.drak_blue, R.color.colorAccent);
 ```
 自定义属性的key值获取方法：
  1. 用管理员账号登陆客服系统.
