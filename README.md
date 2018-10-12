@@ -15,38 +15,8 @@ Webchat sdk 是一个可自定义的嵌入式聊天SDK。
 
 ### 三、AndroidStdio接入方式如下：
 
-**1. 添加Gradle依赖:**
+请直接去最新的sdk文件夹下面下载最新的jar包
 
-**Gradle dependency**
-
-  -  在你**项目project**层级的`build.gradle`添加以下代码：
-
-```gradle
-allprojects {
-	repositories {
-		maven { url "https://raw.github.com/CloudSoft-Team/webchat-android-sdk/master" }
-	}
-}
-```
-  -  在你**App/模块moudle**层级的 `build.gradle`添加以下代码：
-
-```gradle
-dependencies {
-	compile 'chat.icloudsoft:webchat-android-sdk:1.1.7@aar'
-}
-```
-**温馨提示：** 如果你想用aar或jar包的形式接入，可以直接把项目下载下来，挑你需要的版本，把里面的aar或jar包拿出来放到项目中就可以了,（jar包只适用于轻量级自定义的情况，[参考demo](https://github.com/CloudSoft-Team/webchat-android-custom)）
-
-**2. 在你**App/模块moudle**层级的 `build.gradle`添加相关依赖：**
-
-```
-compile 'com.android.support:appcompat-v7:22.2.0'
-compile 'com.android.support:cardview-v7:22.0.0'
-compile'com.android.support:recyclerview-v7:22.0.0'
-compile 'com.android.support:support-v4:22.0.0'
-compile 'com.squareup.retrofit2:retrofit:2.0.2'
-compile 'com.squareup.retrofit2:converter-gson:2.0.2'
-compile 'com.squareup.picasso:picasso:2.5.2'
 ```
 
 **3. 添加相应的权限：**
