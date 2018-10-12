@@ -16,8 +16,8 @@ Webchat sdk 是一个可自定义的嵌入式聊天SDK。
 ### 三、AndroidStdio接入方式如下：
 
 请直接去最新的sdk文件夹下面下载最新的jar包
+![](image/下载地址.png)
 
-```
 
 **3. 添加相应的权限：**
 
